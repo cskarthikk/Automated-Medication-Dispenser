@@ -34,9 +34,6 @@ hardware/
 ├── circuit.jpeg
 └── working_demo.html
 
-markdown
-Copy code
-
 ### **web-app/**
 web-app/
 ├── index.html
@@ -44,9 +41,6 @@ web-app/
 ├── app.js
 ├── server.py
 └── schedules.json
-
-yaml
-Copy code
 
 ---
 
@@ -80,15 +74,8 @@ Copy code
 ### Open the web UI
 http://<your-ip>:5000
 
-shell
-Copy code
-
 ### ESP32 API endpoint
 GET /list?format=esp32
-
-yaml
-Copy code
-
 ---
 
 ## Telegram Alerts
