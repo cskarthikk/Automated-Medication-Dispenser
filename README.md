@@ -1,33 +1,45 @@
-# Automated-Medication-Dispenser
-Automated medication dispenser with biometric security, real-time scheduling, and IoT missed-dose alerts using ESP32, Flask, and Telegram.
-Features
+🏥 Automated Medication Dispenser
 
-Biometric Security – Fingerprint verification required for dispensing.
+A smart medication dispenser with biometric security, real-time scheduling, and IoT missed-dose alerts using ESP32, Flask, and Telegram.
 
-Smart Scheduling – Web dashboard for adding/editing medicine timings for each compartment.
+🚀 Features
+🔐 Biometric Security
 
-IR Confirmation – Dispenses pills only when a hand is detected.
+Fingerprint verification required for dispensing.
 
-Servo-Based Mechanism – Controlled pill release with adjustable compartments.
+🕒 Smart Scheduling
 
-Missed Dose Alerts – Automatic Telegram notifications if the user does not respond.
+Web dashboard for adding/editing medicine timings for each compartment.
 
-Web App + API – Clean frontend UI and Flask backend used by ESP32.
+✋ IR Confirmation
 
-Project Structure
+Dispenses pills only when a hand is detected.
+
+⚙️ Servo-Based Mechanism
+
+Controlled pill release with adjustable compartments.
+
+📡 Missed Dose Alerts
+
+Automatic Telegram notifications if the user does not respond.
+
+🌐 Web App + API
+
+Clean frontend UI and Flask backend used by ESP32.
+
+📂 Project Structure
 hardware/
-  ├── Dispenser.ino
-  ├── schematic.jpeg
-  └── circuit.jpeg
-  └── working_demo.html
+│── Dispenser.ino
+│── schematic.jpeg
+│── circuit.jpeg
+│── working_demo.html
 
 web-app/
-  ├── index.html
-  ├── styles.css
-  ├── app.js
-  ├── server.py
-  └── schedules.json
-
+│── index.html
+│── styles.css
+│── app.js
+│── server.py
+│── schedules.json
 
 🔧 Hardware Overview
 
@@ -43,8 +55,6 @@ Servo Motor
 
 LEDs + Buzzer
 
-Dispenser.ino handles alarms, authentication, IR detection, servo control, and missed-dose logic.
-
 🌐 Running the Web Scheduler
 
 Install Flask:
@@ -57,16 +67,19 @@ Run the server:
 python server.py
 
 
-Open the web UI in your browser:
+Open in browser:
 
 http://<your-ip>:5000
 
 
-ESP32 fetches schedules using:
+ESP32 fetches schedules:
 
 GET /list?format=esp32
 
 📡 Telegram Alerts
 
-A missed dose triggers an automatic Telegram message using the Telegram Bot API.
+A missed dose triggers an automatic notification to the caregiver via Telegram Bot API.
 
+🎥 Demo
+
+Add photos/videos inside hardware/working_demo.html or demo_media/.
