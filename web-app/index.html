@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Medicine Scheduler</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Medicine Scheduler</h2>
+
+    <label>Compartment (A or B)</label>
+    <select id="med">
+      <option value="">-- Select --</option>
+      <option value="A">Compartment A</option>
+      <option value="B">Compartment B</option>
+    </select>
+
+    <label>Time (HH:MM)</label>
+    <input id="time" type="time" />
+
+    <label>Telegram Chat ID</label>
+    <input id="tg" type="text" placeholder="e.g. 948598949" />
+
+    <div class="controls">
+      <button id="add" class="button">Add / Update Schedule</button>
+      <button id="reload" class="button secondary">Reload List</button>
+    </div>
+
+    <h3 style="margin-top:20px;">Scheduled Medicines</h3>
+    <div id="list">(no schedules yet)</div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
